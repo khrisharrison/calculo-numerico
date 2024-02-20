@@ -11,6 +11,7 @@ def biseccion(f,a,b,E,Ni):
         m_anterior = m_actual
         m_actual = (a + b)/2
         if f(m_actual) * f(b) < 0:
+
             a = m_actual
         else:
             b = m_actual
@@ -24,10 +25,12 @@ def biseccion(f,a,b,E,Ni):
     print(Ea)
     print(i)
 
+    return m_actual
+
 def f(x):
     return (x-2)**2 - math.log(x)
 a = 1
 b = 2
 E = 0.04
 Ni = 5
-biseccion(f, a, b, E, Ni)
+m = biseccion(f, a, b, E, Ni)
