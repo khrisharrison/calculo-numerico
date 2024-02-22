@@ -9,7 +9,7 @@ def biseccion(f,a,b,Er,Num_i):
 
     while i < Num_i and E_aprox > Er:
         pm_anterior = pm_actual
-        pm_actual = (a + b)/2
+        pm_actual = (a + b) / 2
         if f(pm_actual) * f(b) < 0:
             a = pm_actual
         else:
