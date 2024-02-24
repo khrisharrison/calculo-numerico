@@ -1,6 +1,6 @@
 import math
 
-def newton_raphson(xi,f,df,Er,Num_i):
+def newton_raphson(xi, f, df, Er, Num_i):
     E_aprox = 1 #error aproximado
     i = 0 #contador del numero de iteraciones
     xi1 = 0 #punto xi+1

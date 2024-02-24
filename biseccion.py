@@ -1,6 +1,6 @@
 import math
 
-def biseccion(f,a,b,Er,Num_i):
+def biseccion(f, a, b, Er, Num_i):
 
     E_aprox = 1 #error aproximado
     i = 0 #contador del numero de iteraciones
