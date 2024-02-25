@@ -29,6 +29,9 @@ class test_integracion_riemann(unittest.TestCase):
     def test_integracion_riemann(self):
         f = lambda x: x * (x**2 + 1) ** 0.5
         self.assertEqual(round(integracion_riemann(f, 0, 1, 4), 5), 0.43855)
+    def test_integracion_riemann2(self):
+        f = lambda x: 3 * x * math.cos(x**2)
+        self.assertEqual(round(integracion_riemann(f, 1, 2, 4), 5), -2.00731)
 
 class test_integracion_trapecio(unittest.TestCase):
     def test_integracion_trapecio(self):
